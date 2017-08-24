@@ -28,9 +28,9 @@ export function loginIn(state = initLoginSatate, action) {
     case types.LOGIN_ED:
       return {
         ...state,
-        status: types.LOGIN_ING,
+        status: types.LOGIN_ED,
         user: action.user,
-        isSuccess: action.isSuccess
+        isSuccess: true
       }
     default:
       return state;
